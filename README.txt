@@ -24,6 +24,8 @@ If everything works correctly, the output should be for the last two line:
 ----------Current_simulation_time-----------6
 
 
+"example_stl_vanderpol.m" is the implementation using CORA and Lercher's "Using Four-Valued Signal Temporal Logic for Incremental Verification of Hybrid Systems" verification protocol.
+
 =====================================Small Documentation===================================
 The verification is performed in a bottom-up manner using the syntax tree of the formula and the satisfaction signals
 
