@@ -137,16 +137,6 @@ Leaves (predicates) → internal nodes (logic/temporal) → root
 predicate µ:   [1][1][0][0][0][ [0,1] ][ [0,1] ][1]
                              ^           ^
                           markers: {j5} {j6}
-
-OR with ν: if ν is 1 on those slots → result 1, drop {j5}/{j6}
-            else keep [0,1] with markers {j5}∪{j6}
-
-UNTIL: back-shift/intersect unitary pieces of ϕ1 and ϕ2
-       combine markers from contributing pieces
-       universal quantifier on ϕ1 means “some [0,1] along [t, t′]”
-       → uncertainty unless a definite 0 blocks satisfaction
-
-Incomplete horizon: padded [0,1] with special negative marker → extend simulation
 ```
 
 All of the above is the uncertainty-tracking mechanism used to selectively refine reachable sets and shrink \[0,1] regions into definitive 0/1 outcomes.&#x20;
