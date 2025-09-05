@@ -72,7 +72,7 @@ Track where STL satisfaction becomes uncertain and refine only what matters (spe
 ## Building Blocks
 
 1. Boolean interval semantics for truth values:
-   0 = false, 1 = true, \[0,1] = undetermined. Logical ops (∧, ∨, ¬) lift pointwise to intervals.&#x20;
+   0 = false, 1 = true, \[0,1] = undetermined. Logical ops (∧, ∨, ¬) follow boolean interval arithmetic.&#x20;
 
 2. Satisfaction signals (time → {0,1} extended to interval form):
    Decompose any STL subformula into unitary signals (true on one continuous interval) so temporal ops can be built from unions/intersections of these pieces.&#x20;
