@@ -45,5 +45,5 @@ print_Satisf_Signals(phi); Displays the satisfaction signal of a given formula.
 ****************
 Image: Experiment with a non linear oscillator and uncertainty tracking to mitigate over-approximation.
 <p align="center">
-  <img src="cdcresult.png" alt="IROS experiment" width="70%">
+  <img src="cdcresult.png" alt="IROS experiment" width="100%">
 </p>
