@@ -82,7 +82,7 @@ Track where STL satisfaction becomes uncertain and refine only what matters (spe
 
 ## What Is Tracked
 
-* For each predicate µ over the tube [ỹ](t), label each time slice \[tj, tj+1] as:
+* For each predicate **µ** over the tube **[ỹ](t)**, label each time slice \[tj, tj+1] as:
   **1** if [ỹ](t) ⊂ Xµ, **0** if [ỹ](t) ∩ Xµ = ∅, \**[0,1]** otherwise.
   Merge consecutive slices of the same kind into unitary intervals; **[0,1]** attach marker M = {*indices j*} that contributed \[0,1] there}.&#x20;
 
