@@ -131,8 +131,6 @@ Temporal operators (Until → Finally/Globally):
 
 ## Tiny Visual Intuition
 
-Leaves (predicates) → internal nodes (logic/temporal) → root
-
 ```
 predicate µ:   [1][1][0][0][0][ [0,1] ][ [0,1] ][1]
                              ^           ^
