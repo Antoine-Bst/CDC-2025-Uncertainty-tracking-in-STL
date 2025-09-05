@@ -19,10 +19,11 @@ Run:
 ./simulation.out
 
 If everything works correctly, the output should be for the last two line:
+```
 -------satisfaction à 0s :1
 ----------new_iteration-----------1
 ----------Current_simulation_time-----------6
-
+```
 
 "example_stl_vanderpol.m" is the implementation using CORA and Lercher's "Using Four-Valued Signal Temporal Logic for Incremental Verification of Hybrid Systems" verification protocol.
 
