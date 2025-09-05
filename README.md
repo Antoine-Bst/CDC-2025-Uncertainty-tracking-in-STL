@@ -1,4 +1,4 @@
-Welcome ! This is a prototype for the verification of STL formula on reachable tube using Dynibex. It has been tested on Linux Ubuntu only.
+Welcome ! This is a prototype for the efficient verification of STL formula on reachable tube using Dynibex. It has been tested on Linux Ubuntu only.
 It uses DynIbex.
 
 Install Dynibex:
