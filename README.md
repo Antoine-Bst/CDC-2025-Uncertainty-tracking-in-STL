@@ -134,8 +134,8 @@ Temporal operators (Until → Finally/Globally):
 
 ```
 predicate µ:   [1][1][0][0][0][ [0,1] ][ [0,1] ][1]
-                             ^           ^
-                          markers: {j5} {j6}
+                                  ^        ^
+                       markers: {j5}    {j6, j7}
 ```
 
 All of the above is the uncertainty-tracking mechanism used to selectively refine reachable sets and shrink \[0,1] regions into definitive 0/1 outcomes.&#x20;
