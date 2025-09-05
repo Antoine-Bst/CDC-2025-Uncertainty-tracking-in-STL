@@ -26,21 +26,37 @@ If everything works correctly, the output should be for the last two line:
 
 "example_stl_vanderpol.m" is the implementation using CORA and Lercher's "Using Four-Valued Signal Temporal Logic for Incremental Verification of Hybrid Systems" verification protocol.
 
-=====================================Small Documentation===================================
-The verification is performed in a bottom-up manner using the syntax tree of the formula and the satisfaction signals
+## STL Formula Verification
 
-phi1 = neg_stl(phi);             // Logical negation: ¬phi
-phi1 = and_stl(phi2, phi3);      // Logical AND: phi2 ∧ phi3
-phi1 = or_stl(phi2, phi3);       // Logical OR: phi2 ∨ phi3
-phi1 = until_stl(phi2, phi3, {t1, t2});  // Until operator: phi2 U[t1,t2] phi3
-phi1 = Finally(phi, {t1, t2});   // Eventually operator: F[t1,t2] phi
-phi1 = Globally(phi, {t1, t2});  // Always operator: G[t1,t2] phi
+Verification is performed bottom-up using the syntax tree of the formula and satisfaction signals.
 
+Supported operators:
 
-predicate_satisfaction(sim, predicates); Constructs satisfaction signals for the list of predicates and the simulation object.
-The output is a list of signals corresponding to each predicate in the input list.
+```
+phi1 = neg_stl(phi);                        // Logical negation: ¬phi
+phi1 = and_stl(phi2, phi3);                 // Logical AND: phi2 ∧ phi3
+phi1 = or_stl(phi2, phi3);                  // Logical OR: phi2 ∨ phi3
+phi1 = until_stl(phi2, phi3, {t1, t2});     // Until operator: phi2 U[t1,t2] phi3
+phi1 = Finally(phi, {t1, t2});              // Eventually operator: F[t1,t2] phi
+phi1 = Globally(phi, {t1, t2});             // Always operator: G[t1,t2] phi
+```
 
-print_Satisf_Signals(phi); Displays the satisfaction signal of a given formula.
+Predicate satisfaction:
+
+```
+predicate_satisfaction(sim, predicates);
+```
+
+This constructs satisfaction signals for a list of predicates and the simulation object.
+The output is a list of signals corresponding to each predicate.
+
+Display signals:
+
+```
+print_Satisf_Signals(phi);
+```
+
+This displays the satisfaction signal of a given formula.
 
 ****************
 Image: Experiment with a non linear oscillator and uncertainty tracking to mitigate over-approximation.
