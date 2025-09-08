@@ -123,7 +123,7 @@ Temporal operators (Until → Finally/Globally):
    * If “negative index” is present: extend horizon and complete the tube (compute missing part).&#x20;
 5. Re-evaluate; repeat until conclusive or stopping criterion. (See the adaptive refinement algorithm sketch in the paper.)&#x20;
 
-## Why It Helps
+## Why It Helps ?
 
 * Focused effort: refine only the sets that actually create ambiguity.
 * Soundness preserved by Boolean-interval semantics.
